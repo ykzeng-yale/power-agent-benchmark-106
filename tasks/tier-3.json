@@ -1,0 +1,160 @@
+[
+  {
+    "id": "t3-cluster-001",
+    "question": "A two-arm cluster randomized trial has 20 clinics per arm and the same number of complete patients in every clinic. Patient outcomes are Gaussian with common marginal SD, independent across clinics, and exchangeable within clinic with ICC 0.05. The treatment mean difference is 0.4 marginal SDs. Analyze equally weighted clinic means using a two-sided pooled-variance t test at alpha 0.05. What is the minimum integer patients per clinic for 80% power?",
+    "ground_truth": {
+      "subjects_per_cluster": 7,
+      "total_subjects": 280
+    }
+  },
+  {
+    "id": "t3-cluster-002",
+    "question": "A school intervention trial has 15 schools per arm and exactly 30 students per school. Outcomes are Gaussian with common marginal SD and exchangeable within-school ICC 0.08. Schools are independent. Analyze the school means with a two-sided pooled-variance t test at alpha 0.05. What is the minimum difference between treatment and control means, in marginal individual SD units (Cohen d), that gives 80% power?",
+    "ground_truth": {
+      "detectable_effect_d": 0.352559
+    }
+  },
+  {
+    "id": "t3-cluster-003",
+    "question": "A cluster randomized trial has 25 independent clusters per arm. In each arm the fixed cluster sizes have mean 20 and population coefficient of variation 0.4. Outcomes are Gaussian with common known marginal variance and exchangeable within-cluster ICC 0.03. The treatment mean difference is 0.3 marginal SDs. Use the difference of patient-weighted means and a two-sided normal test at alpha 0.05, using the specified cluster-size moments for the variance. What is the power?",
+    "ground_truth": {
+      "power": 0.956828
+    }
+  },
+  {
+    "id": "t3-cluster-004",
+    "question": "A binary-outcome cluster trial has 12 independent clinics per arm with the same integer number of patients in each clinic. Control and treatment response probabilities are 0.30 and 0.20, with ICC 0.02 in both arms. Use the two-sided normal score power approximation at alpha 0.05. Inflate variances by 1+(m−1)ICC, where m is patients per clinic. For the rejection threshold use the pooled null rate (0.30+0.20)/2, and for alternative power use the two arm-specific rates. What is the smallest number of patients per clinic for at least 80% approximate power?",
+    "ground_truth": {
+      "subjects_per_cluster": 47,
+      "total_subjects": 1128
+    }
+  },
+  {
+    "id": "t3-cluster-005",
+    "question": "A repeated cross-sectional stepped-wedge trial has 6 independent clusters and 4 periods. Two clusters follow each sequence 0111, 0011, and 0001. Each cluster-period enrolls the same number of new individuals. Gaussian outcomes have a common marginal SD, correlation 0.05 between distinct individuals in the same cluster-period, and 0.025 between individuals in different periods of the same cluster. The constant treatment effect is 0.5 marginal SDs. Fit GLS to the 24 cluster-period means with a fixed mean for every period and a treatment indicator. Treat the covariance shape as known, estimate only the common variance scale, and use the resulting two-sided t test with 19 residual degrees of freedom at alpha 0.05. What is the minimum integer participants per cluster-period for 80% power?",
+    "ground_truth": {
+      "subjects_per_cluster_period": 29,
+      "total_subjects": 696
+    }
+  },
+  {
+    "id": "t3-cross-001",
+    "question": "In a complete two-period AB/BA crossover trial with equal sequence allocation and no carryover, Gaussian outcomes have common marginal SD and within-subject correlation 0.70. The mean treatment difference is 0.50 marginal SDs. For each subject compute A minus B, and regress the contrast on an intercept and sequence coded −1/+1 to adjust for period, using the intercept as the treatment-effect estimate. Use the exact two-sided t test of the treatment contrast at alpha 0.05 with N−2 degrees of freedom. What is the minimum even total number of subjects for 80% power?",
+    "ground_truth": {
+      "total_subjects": 22
+    }
+  },
+  {
+    "id": "t3-cross-002",
+    "question": "A complete two-period AB/BA crossover trial assigns equal numbers to both sequences and assumes no carryover. The mean treatment difference is 0.30 times the SD of the subject-level Gaussian A-minus-B contrast. After computing that contrast for each subject, regress the contrast on an intercept and sequence coded −1/+1 to adjust for period, using the intercept as the treatment-effect estimate. With the resulting two-sided t test at alpha 0.05 and N−2 degrees of freedom, what is the minimum even total number of subjects for 90% power?",
+    "ground_truth": {
+      "total_subjects": 120
+    }
+  },
+  {
+    "id": "t3-cross-003",
+    "question": "A three-period crossover study assigns equal numbers of subjects to sequences ABC, BCA, and CAB, with C the control. There is no carryover. Gaussian outcomes have a common marginal SD and compound-symmetric within-subject correlation 0.60. The A-versus-C effect is 0.40 marginal SDs. Fit fixed subject, treatment, and period effects, and use the pooled residual variance for the single two-sided A-versus-C t test at alpha 0.05. What is the minimum total number of complete subjects, a multiple of three, for 80% power?",
+    "ground_truth": {
+      "total_subjects": 42
+    }
+  },
+  {
+    "id": "t3-cross-004",
+    "question": "A four-period replicate crossover bioequivalence trial assigns equal numbers to ABAB and BABA. Use log outcomes, a constant log mean A-minus-B contrast, additive period effects, no carryover, and a common Gaussian SD of 0.25 for each subject’s treatment-average difference. The true mean contrast is 0.35 times this SD. Regress each subject’s treatment-average difference on an intercept and sequence coded −1/+1. Declare equivalence when the two-sided 90% t interval for the intercept lies entirely within [log(0.80), log(1.25)]. Using exact power integrated over the residual variance estimate, what is the smallest even total number of complete subjects for 85% power?",
+    "ground_truth": {
+      "total_subjects": 26
+    }
+  },
+  {
+    "id": "t3-fact-001",
+    "question": "A balanced 2×2 factorial trial has independent Gaussian observations and a common within-cell SD. The main effect of interest is the difference between the two marginal means of one factor, equally averaged over levels of the other factor. The difference is 0.40 within-cell SDs. Fit all four cell means and use the pooled within-cell variance for a two-sided t test at alpha 0.05, without multiplicity adjustment. What is the minimum integer participants per cell for 80% power?",
+    "ground_truth": {
+      "per_cell": 50,
+      "total_sample_size": 200
+    }
+  },
+  {
+    "id": "t3-fact-002",
+    "question": "A balanced 2×2 factorial trial has independent Gaussian observations with a common within-cell SD. The standardized main effects are 0.50. The primary interaction is the difference of treatment differences across the other factor’s two levels, and is 0.30 within-cell SDs. Fit all four cell means. What is the minimum integer participants per cell for 80% power using a two-sided t test of this interaction at alpha 0.05 and the pooled within-cell variance?",
+    "ground_truth": {
+      "per_cell": 350,
+      "total_sample_size": 1400
+    }
+  },
+  {
+    "id": "t3-fact-003",
+    "question": "A balanced 3×2 factorial trial has three equally spaced dose levels and two formulations, independent Gaussian errors, and common within-cell SD sigma. The single primary contrast C is the highest-dose minus lowest-dose mean after averaging equally across formulations. Assume C/(sqrt(6) sigma)=0.25. Fit the six cell means and use the pooled within-cell error for the two-sided 1-df linear trend test at alpha 0.05. What are the smallest total sample size and corresponding integer participants per cell for 80% power?",
+    "ground_truth": {
+      "per_cell": 22,
+      "total_sample_size": 132
+    }
+  },
+  {
+    "id": "t3-fact-004",
+    "question": "A regular half fraction of a 2^4 factorial uses defining relation I=ABCD and has 3 independent Gaussian observations in each of its 8 runs, with common SD sigma. Assume all three-factor interactions are zero. For any one prespecified main effect, the difference between the mean at the high and low levels is 1.50 sigma. Use a two-sided alpha 0.05 t test and estimate the error variance from replication within the 8 runs only. What is the power for that one effect?",
+    "ground_truth": {
+      "power": 0.93138
+    }
+  },
+  {
+    "id": "t3-simr-001",
+    "question": "A balanced two-arm Gaussian study measures each subject at 5 occasions. The mean treatment effect is a constant 0.50 outcome units. Subjects have independent Gaussian random intercepts with SD 0.80 and Gaussian measurement errors with SD 1.00, independent of intercepts and each other. All subjects have complete measurements. Use a two-sided pooled-variance t test on the subject averages at alpha 0.05. What is the minimum integer subjects per group for 80% power?",
+    "ground_truth": {
+      "subjects_per_group": 54,
+      "total_subjects": 108
+    }
+  },
+  {
+    "id": "t3-simr-002",
+    "question": "A balanced study has three complete binary observations per subject. Conditional on b~N(0,0.50^2), the three observations are independent and logit P(Y=1|z,b)=logit(0.30)+log(2)z+b for treatment z=0 or 1. Subjects are independent. Analyze using the integrated logistic random-intercept likelihood, estimating the intercept, treatment effect, and random-intercept SD. For planning, use a two-sided normal Wald power approximation at alpha 0.05 with the expected Fisher information evaluated at the stated alternative model. What is the minimum integer subjects per group for at least 80% approximate power?",
+    "ground_truth": {
+      "subjects_per_group": 60,
+      "total_subjects": 120
+    }
+  },
+  {
+    "id": "t3-simr-003",
+    "question": "A two-arm longitudinal study has 40 independent subjects per group, each observed at times 0 through 5. The Gaussian random intercept SD is 1.0, random slope SD is 0.20, and independent residual SD is 1.0. The treatment shifts the mean slope by 0.10 outcome units per time unit. Fit a least-squares slope with intercept to each subject’s six observations, then compare slopes with a two-sided pooled-variance t test at alpha 0.05. What is the power?",
+    "ground_truth": {
+      "power": 0.294017
+    }
+  },
+  {
+    "id": "t3-simr-004",
+    "question": "An educational trial randomizes 10 independent schools per arm. Every school has 4 classrooms with 25 students each. Gaussian variance components are 0.05 for school, 0.10 for classroom within school, and 0.85 for student residual, all independent. The treatment shifts the outcome mean by 0.30 marginal individual SDs. Use each school’s mean outcome and a two-sided pooled-variance t test at alpha 0.05. What is the power?",
+    "ground_truth": {
+      "power": 0.593546
+    }
+  },
+  {
+    "id": "t3-simr-005",
+    "question": "A cluster randomized survival trial assigns 20 independent clusters per arm, with 15 people per cluster and administrative censoring at 2 years. Each cluster has one Gamma(shape=2, scale=0.5) frailty W. Given W, event times are independent exponentials with rate lambda0 × W × HR^z, where z is the treatment indicator and lambda0 gives 60% 2-year marginal survival in controls. The alternative conditional HR is 0.70. Use the absolute treatment score at zero from a Cox model without a fitted frailty term. For each simulated trial, calculate the randomization p-value as (1 + the number of scores at least as extreme among 999 independently sampled balanced cluster assignments) / 1000. For alpha 0.05, estimate power and null rejection rate (HR=1) using 10,000 independent simulations per scenario and report Monte Carlo uncertainty.",
+    "ground_truth": {
+      "power": 0.2456,
+      "power_monte_carlo_95_ci": [
+        0.237189,
+        0.25416
+      ],
+      "null_rejection_rate": 0.0505,
+      "null_rejection_monte_carlo_95_ci": [
+        0.04629,
+        0.054975
+      ]
+    }
+  },
+  {
+    "id": "t3-simr-006",
+    "question": "A balanced two-arm trial measures two jointly Gaussian outcomes for every subject at 4 occasions. Their constant mean treatment shifts are 0.40 and 0.30 outcome units. For both outcomes, subject random intercept SD is 0.50 and measurement residual SD is 1.00. Between outcomes, random intercepts have correlation 0.60 and same-occasion residuals have correlation 0.60. Across subjects and measurement occasions, residual pairs are independent and independent of subject intercepts. The primary endpoint alone determines success. Use a two-sided pooled-variance t test at alpha 0.05 on each subject’s four-observation primary outcome average. What is the minimum number of subjects per group for 80% power?",
+    "ground_truth": {
+      "subjects_per_group": 51,
+      "total_subjects": 102
+    }
+  },
+  {
+    "id": "t3-simr-007",
+    "question": "A cluster randomized longitudinal trial has 15 independent clusters per arm, with 20 subjects in each cluster observed at all four times 0, 1, 2 and 3. The mean slope difference is 0.15 outcome units per time unit. Gaussian random intercepts and slopes act at cluster level, with SDs 0.50 and 0.10. Individual measurement errors are mutually independent Gaussian with SD 1.0, independent of random effects. Compute the four cluster-time means and fit a slope with intercept in each cluster. What is the power of a two-sided pooled-variance t test of the cluster slopes at alpha 0.05?",
+    "ground_truth": {
+      "power": 0.800636
+    }
+  }
+]

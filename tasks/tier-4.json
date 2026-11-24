@@ -1,0 +1,166 @@
+[
+  {
+    "id": "t4-binary-001",
+    "question": "Develop a logistic model for liver cirrhosis. Plan for 24 candidate slope parameters, prevalence 0.17, and anticipated adjusted Cox–Snell R² of 0.288. Use the three Riley binary development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and a 95% Wald margin of error ≤0.05 for the overall outcome risk. Use z=1.96, do not apply an additional prediction-error criterion, and round up only the final requirements. What minimum number of participants and corresponding expected number of events are needed?",
+    "ground_truth": {
+      "sample_size": 667,
+      "expected_events": 113.39
+    }
+  },
+  {
+    "id": "t4-binary-002",
+    "question": "Develop a logistic model for hospital readmission with 24 candidate slope parameters, prevalence 0.174, and anticipated adjusted Nagelkerke R² of 0.36. Use the three Riley binary development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and a 95% Wald margin of error ≤0.05 for the overall outcome risk. Use z=1.96, do not apply an additional prediction-error criterion, and round up only the final requirements. What minimum number of participants and corresponding expected number of events are needed?",
+    "ground_truth": {
+      "sample_size": 870,
+      "expected_events": 151.38
+    }
+  },
+  {
+    "id": "t4-binary-003",
+    "question": "Develop a logistic model for postoperative complications. Plan for 12 candidate slope parameters, prevalence 0.05, and anticipated AUROC 0.80. Approximate adjusted Cox–Snell R² under equal-variance normal scores given outcome status. Set the non-event score distribution to N(0,1) and the event score distribution to N(d,1), where d=√2 Φ⁻¹(AUROC). Use population expected logistic log likelihoods under this model and the stated prevalence, without simulation. Use the three Riley binary development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and a 95% Wald margin of error ≤0.05 for the overall outcome risk. Use z=1.96, do not apply an additional prediction-error criterion, and round up only the final requirements. What minimum number of participants and corresponding expected number of events are needed?",
+    "ground_truth": {
+      "sample_size": 1673,
+      "expected_events": 83.65
+    }
+  },
+  {
+    "id": "t4-binary-004",
+    "question": "Develop a logistic model with 25 candidate slope parameters fixed before observing the development data. An independent source was used to screen the candidate list. The target population prevalence is 0.12 and the anticipated AUROC is 0.82. Approximate adjusted Cox–Snell R² under equal-variance normal scores given outcome status. Set the non-event score distribution to N(0,1) and the event score distribution to N(d,1), where d=√2 Φ⁻¹(AUROC). Use population expected logistic log likelihoods under this model and the stated prevalence, without simulation. Use the three Riley binary development criteria: global shrinkage ≥0.95, apparent versus adjusted Nagelkerke R² difference ≤0.05, and a 95% Wald margin of error ≤0.05 for the overall outcome risk. Use z=1.96, do not apply an additional prediction-error criterion, and round up only the final requirements. What minimum number of participants and corresponding expected number of events are needed?",
+    "ground_truth": {
+      "sample_size": 2961,
+      "expected_events": 355.32
+    }
+  },
+  {
+    "id": "t4-binary-005",
+    "question": "Develop a logistic model for a rare binary outcome with 8 candidate slope parameters, prevalence 0.03, and anticipated AUROC 0.85. Approximate adjusted Cox–Snell R² under equal-variance normal scores given outcome status. Set the non-event score distribution to N(0,1) and the event score distribution to N(d,1), where d=√2 Φ⁻¹(AUROC). Use population expected logistic log likelihoods under this model and the stated prevalence, without simulation. Use the three Riley binary development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and a 95% Wald margin of error ≤0.05 for the overall outcome risk. Use z=1.96, do not apply an additional prediction-error criterion, and round up only the final requirements. What minimum number of participants and corresponding expected number of events are needed?",
+    "ground_truth": {
+      "sample_size": 1209,
+      "expected_events": 36.27
+    }
+  },
+  {
+    "id": "t4-surv-001",
+    "question": "Develop a model for time to first recurrent venous thromboembolism. Assume a constant event hazard of 0.065 per person-year, 30 candidate slope parameters, and anticipated adjusted Cox–Snell R² of 0.051. The prediction horizon is 2 years and mean observed time at risk is 2.07 years per participant. Use the Riley time-to-event development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and absolute error ≤0.05 at both ends of the 95% confidence interval for the risk at the prediction horizon. For the last criterion, transform both ends of the Wald interval for the constant hazard using standard error √(λ/T) and z=1.96, where T is total time at risk. Use the unrounded expected event fraction in the Cox–Snell maximum calculation. What minimum number of participants and corresponding expected number of primary events are needed?",
+    "ground_truth": {
+      "sample_size": 5143,
+      "expected_events": 691.99065
+    }
+  },
+  {
+    "id": "t4-surv-002",
+    "question": "Develop a cancer mortality prediction model with 6 candidate slope parameters and anticipated adjusted Cox–Snell R² of 0.25. Assume a constant hazard and 40% cumulative mortality by 5 years. Mean observed time at risk is 3 years per participant. Use the Riley time-to-event development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and absolute error ≤0.05 at both ends of the 95% confidence interval for the risk at the prediction horizon. For the last criterion, transform both ends of the Wald interval for the constant hazard using standard error √(λ/T) and z=1.96, where T is total time at risk. Use the unrounded expected event fraction in the Cox–Snell maximum calculation. What minimum number of participants and corresponding expected number of primary events are needed?",
+    "ground_truth": {
+      "sample_size": 511,
+      "expected_events": 156.6191362467
+    }
+  },
+  {
+    "id": "t4-surv-003",
+    "question": "Develop a cardiovascular event prediction model with 12 candidate slope parameters and anticipated adjusted Cox–Snell R² of 0.15. Assume a constant hazard and 15% cumulative event risk by 10 years. Mean observed time at risk is 6 years per participant. Use the Riley time-to-event development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and absolute error ≤0.05 at both ends of the 95% confidence interval for the risk at the prediction horizon. For the last criterion, transform both ends of the Wald interval for the constant hazard using standard error √(λ/T) and z=1.96, where T is total time at risk. Use the unrounded expected event fraction in the Cox–Snell maximum calculation. What minimum number of participants and corresponding expected number of primary events are needed?",
+    "ground_truth": {
+      "sample_size": 659,
+      "expected_events": 64.2599847234
+    }
+  },
+  {
+    "id": "t4-surv-004",
+    "question": "Develop a cause-specific survival model for a primary event in the presence of competing events. Follow-up at risk ends at the first primary or competing event or loss to follow-up, and mean observed time at risk is 3 years per participant. Assume a constant primary cause-specific hazard of 0.20 per person-year, 10 candidate slope parameters, and anticipated adjusted Cox–Snell R² of 0.18 for this model. The 5-year target is the net risk 1−exp(−5λ) derived from the primary cause-specific hazard λ. The target is this functional of the primary hazard alone, rather than the competing-risk cumulative incidence. Use the Riley time-to-event development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and absolute error ≤0.05 at both ends of the 95% confidence interval for the risk at the prediction horizon. For the last criterion, transform both ends of the Wald interval for the constant hazard using standard error √(λ/T) and z=1.96, where T is total time at risk. Use the unrounded expected event fraction in the Cox–Snell maximum calculation. What minimum number of participants and corresponding expected number of primary events are needed?",
+    "ground_truth": {
+      "sample_size": 449,
+      "expected_events": 269.4
+    }
+  },
+  {
+    "id": "t4-surv-005",
+    "question": "Develop a time-to-event model with 15 candidate slope parameters and anticipated adjusted Cox–Snell R² of 0.20. Assume a constant hazard and 40% cumulative risk by 3 years. Mean observed time at risk is 2.5 years per participant. Use the Riley time-to-event development criteria: global shrinkage ≥0.90, apparent versus adjusted Nagelkerke R² difference ≤0.05, and absolute error ≤0.05 at both ends of the 95% confidence interval for the risk at the prediction horizon. For the last criterion, transform both ends of the Wald interval for the constant hazard using standard error √(λ/T) and z=1.96, where T is total time at risk. Use the unrounded expected event fraction in the Cox–Snell maximum calculation. What minimum number of participants and corresponding expected number of primary events are needed?",
+    "ground_truth": {
+      "sample_size": 597,
+      "expected_events": 254.1357478236
+    }
+  },
+  {
+    "id": "t4-cont-001",
+    "question": "Develop a linear model to predict fat-free mass in children, on an analysis scale for which the population outcome mean is 1.9 and SD is 0.6. Use 25 prespecified candidate slope parameters and anticipated adjusted R² of 0.20. Center the predictors at their population means. Use Riley's continuous-outcome criteria: global shrinkage ≥0.90, apparent versus adjusted R² difference ≤0.05, a 95% chi-square interval for residual SD with both endpoints within the multiplicative factor 1.10, and a 95% t interval for the mean outcome with half-width ≤10% of the population outcome mean. What minimum total sample size meets all four criteria?",
+    "ground_truth": {
+      "sample_size": 918
+    }
+  },
+  {
+    "id": "t4-cont-002",
+    "question": "Develop a linear model to predict blood pressure. Use 5 prespecified candidate slope parameters, anticipated adjusted R² of 0.30, population mean 120 mm Hg, and population outcome SD 15 mm Hg. Center the predictors at their population means. Use Riley's continuous-outcome criteria: global shrinkage ≥0.90, apparent versus adjusted R² difference ≤0.05, a 95% chi-square interval for residual SD with both endpoints within the multiplicative factor 1.10, and a 95% t interval for the mean outcome with half-width ≤10% of the population outcome mean. What minimum total sample size meets all four criteria?",
+    "ground_truth": {
+      "sample_size": 239
+    }
+  },
+  {
+    "id": "t4-cont-003",
+    "question": "Develop a linear prediction model for a standardized continuous outcome with population mean 0 and SD 1. Use 15 prespecified candidate slope parameters and anticipated adjusted R² of 0.15. Center the predictors at their population means. Use Riley's continuous-outcome criteria: global shrinkage ≥0.95, apparent versus adjusted R² difference ≤0.05, a 95% chi-square interval for residual SD with both endpoints within the multiplicative factor 1.10, and a 95% t interval for the mean outcome with half-width ≤0.10 outcome SD on the standardized scale. What minimum total sample size meets all four criteria?",
+    "ground_truth": {
+      "sample_size": 1507
+    }
+  },
+  {
+    "id": "t4-cont-004",
+    "question": "Develop a linear prediction model for a standardized continuous outcome with population mean 0 and SD 1. A LASSO fit to independent data screened the candidate list, leaving 30 slope parameters fixed before any use of this development dataset. Use anticipated adjusted R² of 0.35. Center the predictors at their population means. Use Riley's continuous-outcome criteria: global shrinkage ≥0.90, apparent versus adjusted R² difference ≤0.05, a 95% chi-square interval for residual SD with both endpoints within the multiplicative factor 1.10, and a 95% t interval for the mean outcome with half-width ≤0.10 outcome SD on the standardized scale. What minimum total sample size meets all four criteria?",
+    "ground_truth": {
+      "sample_size": 579
+    }
+  },
+  {
+    "id": "t4-valid-001",
+    "question": "Externally validate a DVT diagnostic model. The predicted log odds L follow N(−1.75, 2.16²). Specify the joint outcome model as Pr(Y=1 | L)=expit(α+βL). Determine α and the positive slope β from the target prevalence 0.22 and C-statistic 0.82, using the given distribution of L. Let the expected component of O/E be the mean model-predicted risk E[expit(L)]. Target 95% interval widths no greater than 0.10 for the C-statistic, 0.20 for the calibration slope, and 0.20 for the O/E ratio. Use Riley et al. (2021) equations 5, 7, and 11, z=1.96, and population integration. Retain the unrounded log-scale O/E standard error and Fisher information. What minimum number of participants and corresponding expected number of events meet these criteria?",
+    "ground_truth": {
+      "sample_size": 1142,
+      "expected_events": 251.24
+    }
+  },
+  {
+    "id": "t4-valid-002",
+    "question": "Externally validate a stroke risk model. The predicted log odds L follow N(−2.00, 1.44²). Specify the joint outcome model as Pr(Y=1 | L)=expit(α+βL). Determine α and the positive slope β from the target prevalence 0.15 and C-statistic 0.75, using the given distribution of L. Let the expected component of O/E be the mean model-predicted risk E[expit(L)]. Target 95% interval widths no greater than 0.08 for the C-statistic, 0.30 for the calibration slope, and 0.30 for the O/E ratio. Use Riley et al. (2021) equations 5, 7, and 11, z=1.96, and population integration. Retain the unrounded log-scale O/E standard error and Fisher information. What minimum number of participants and corresponding expected number of events meet these criteria?",
+    "ground_truth": {
+      "sample_size": 1111,
+      "expected_events": 166.65
+    }
+  },
+  {
+    "id": "t4-valid-003",
+    "question": "Externally validate a model with high discrimination. The predicted log odds L follow N(−0.50, 4.00²). Specify the joint outcome model as Pr(Y=1 | L)=expit(α+βL). Determine α and the positive slope β from the target prevalence 0.30 and C-statistic 0.90, using the given distribution of L. Let the expected component of O/E be the mean model-predicted risk E[expit(L)]. Target 95% interval widths no greater than 0.05 for the C-statistic, 0.20 for the calibration slope, and 0.20 for the O/E ratio. Use Riley et al. (2021) equations 5, 7, and 11, z=1.96, and population integration. Retain the unrounded log-scale O/E standard error and Fisher information. What minimum number of participants and corresponding expected number of events meet these criteria?",
+    "ground_truth": {
+      "sample_size": 746,
+      "expected_events": 223.8
+    }
+  },
+  {
+    "id": "t4-valid-004",
+    "question": "Externally validate a model whose predicted probabilities P follow Beta(2,5). Define predicted log odds L=logit(P). Specify the joint outcome model as Pr(Y=1 | L)=expit(α+βL). Determine α and the positive slope β from the target prevalence 0.15 and C-statistic 0.75, using the given distribution of L. Let the expected component of O/E be the mean model-predicted risk E[expit(L)]. Target 95% interval widths no greater than 0.10 for the C-statistic, 0.20 for the calibration slope, and 0.20 for the O/E ratio. Use Riley et al. (2021) equations 5, 7, and 11, z=1.96, and population integration. Retain the unrounded log-scale O/E standard error and Fisher information. What minimum number of participants and corresponding expected number of events meet these criteria?",
+    "ground_truth": {
+      "sample_size": 6281,
+      "expected_events": 942.15
+    }
+  },
+  {
+    "id": "t4-valid-005",
+    "question": "Externally validate a DVT diagnostic model. The predicted log odds L follow N(−1.75, 2.16²). Specify the joint outcome model as Pr(Y=1 | L)=expit(α+βL). Determine α and the positive slope β from the target prevalence 0.22 and C-statistic 0.82, using the given distribution of L. Let the expected component of O/E be the mean model-predicted risk E[expit(L)]. Target 95% interval widths no greater than 0.10 for the C-statistic, 0.30 for the calibration slope, and 0.30 for the O/E ratio. Use Riley et al. (2021) equations 5, 7, and 11, z=1.96, and population integration. Retain the unrounded log-scale O/E standard error and Fisher information. What minimum number of participants and corresponding expected number of events meet these criteria?",
+    "ground_truth": {
+      "sample_size": 508,
+      "expected_events": 111.76
+    }
+  },
+  {
+    "id": "t4-valid-006",
+    "question": "Externally validate a cancer screening model. The predicted log odds L follow N(−3.00, 2.25²). Specify the joint outcome model as Pr(Y=1 | L)=expit(α+βL). Determine α and the positive slope β from the target prevalence 0.10 and C-statistic 0.80, using the given distribution of L. Let the expected component of O/E be the mean model-predicted risk E[expit(L)]. Target 95% interval widths no greater than 0.10 for the C-statistic, 0.20 for the calibration slope, and 0.20 for the O/E ratio. Use Riley et al. (2021) equations 5, 7, and 11, z=1.96, and population integration. Retain the unrounded log-scale O/E standard error and Fisher information. Also require a 95% confidence interval width ≤0.20 for standardized net benefit at predicted probability threshold 0.10. Derive sensitivity and specificity at that threshold from this same joint outcome model and use Riley et al. equation 13. What minimum number of participants and corresponding expected number of events meet these criteria?",
+    "ground_truth": {
+      "sample_size": 1622,
+      "expected_events": 162.2
+    }
+  },
+  {
+    "id": "t4-valid-007",
+    "question": "Externally validate an existing binary prediction model. Its C-statistic was 0.80 in development and is anticipated to be 0.75 in the validation population, where outcome prevalence is 0.12. Estimate sample size for discrimination alone. Use the large-sample Hanley–McNeil variance approximation with expected event and nonevent fractions and the 97.5th standard normal quantile. What minimum number of participants and corresponding expected number of events give a two-sided 95% confidence interval width at most 0.10 for the validation C-statistic?",
+    "ground_truth": {
+      "sample_size": 1095,
+      "expected_events": 131.4
+    }
+  }
+]

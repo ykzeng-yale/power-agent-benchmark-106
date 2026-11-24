@@ -1,0 +1,228 @@
+[
+  {
+    "id": "t1-ttest-001",
+    "question": "I want to compare mean blood pressure between treatment and control groups. I expect a medium effect size (Cohen's d = 0.5), want 80% power at alpha = 0.05 using a two-sided test. How many participants do I need per group? Assume equal allocation and independent Gaussian outcomes with a common variance. Use the pooled t test.",
+    "ground_truth": {
+      "sample_size_per_group": 64,
+      "total_sample_size": 128
+    }
+  },
+  {
+    "id": "t1-ttest-002",
+    "question": "Testing if a new drug reduces cholesterol. Expected reduction is 15 mg/dL with SD of 30 mg/dL in both groups. I need 90% power with two-sided alpha = 0.05. What sample size per group? Assume equal allocation and independent Gaussian outcomes. Use the pooled t test.",
+    "ground_truth": {
+      "sample_size_per_group": 86,
+      "total_sample_size": 172
+    }
+  },
+  {
+    "id": "t1-ttest-003",
+    "question": "I'm comparing pain scores between a new treatment and standard care. Based on prior studies, we expect only a small improvement (d = 0.3), but we believe the new treatment will be better, so we're using a one-sided test. How many patients per arm do we need for 80% power at alpha = 0.05? Assume equal allocation and independent Gaussian outcomes with a common variance. Use the one-sided pooled t test.",
+    "ground_truth": {
+      "sample_size_per_group": 139,
+      "total_sample_size": 278
+    }
+  },
+  {
+    "id": "t1-ttest-004",
+    "question": "We're running a trial comparing CBT therapy to a waitlist control for anxiety. Based on pilot data, we expect an 8-point difference on the anxiety scale, with a pooled SD of about 12 points. We want to be more rigorous with alpha = 0.01. How many participants per group for 90% power? Assume equal allocation and independent Gaussian outcomes. Use a two-sided pooled t test.",
+    "ground_truth": {
+      "sample_size_per_group": 69,
+      "total_sample_size": 138
+    }
+  },
+  {
+    "id": "t1-ttest-005",
+    "question": "We're planning an RCT to see if continuous glucose monitors improve HbA1c compared to standard monitoring. We expect a 0.4% difference with SD of 1.0%. Since we're testing superiority (one-sided), we'll use alpha = 0.025. How many patients per group for 95% power? Assume equal allocation and independent Gaussian outcomes with a common variance. Use a one-sided pooled t test.",
+    "ground_truth": {
+      "sample_size_per_group": 164,
+      "total_sample_size": 328
+    }
+  },
+  {
+    "id": "t1-ttest-006",
+    "question": "A pharmaceutical company needs to detect a large effect (d = 0.8) in a confirmatory phase III trial. They require 99% power with alpha = 0.001 (two-sided) for regulatory purposes. What's the sample size per treatment arm? Assume equal allocation and independent Gaussian outcomes with a common variance. Use the pooled t test.",
+    "ground_truth": {
+      "sample_size_per_group": 102,
+      "total_sample_size": 204
+    }
+  },
+  {
+    "id": "t1-paired-001",
+    "question": "I'm measuring patients' depression scores before and after 8 weeks of treatment. Expected improvement is 5 points with SD of changes = 10 (d = 0.5). With 80% power and alpha = 0.05, how many patients do I need? Assume independent patient-level Gaussian differences and use a two-sided paired t test.",
+    "ground_truth": {
+      "total_sample_size": 34
+    }
+  },
+  {
+    "id": "t1-paired-002",
+    "question": "I'm running a weight loss intervention and will measure participants before and after. We expect about 3 kg average loss with individual variation (SD of the changes) around 5 kg. How many participants do I need for 90% power at alpha = 0.05? Assume independent participant-level Gaussian differences and use a two-sided paired t test.",
+    "ground_truth": {
+      "total_sample_size": 32
+    }
+  },
+  {
+    "id": "t1-paired-003",
+    "question": "We are comparing the area under the concentration–time curve (AUC) for two drug formulations in a paired crossover study. For this planning exercise, equivalence is a population mean paired difference between −100 and 100 AUC units. Expect a true difference of 50 units and an SD of paired differences of 100 units. Assume independent Gaussian paired differences and no period or carryover effects. Using a paired two one-sided tests (TOST) procedure with each test at alpha = 0.05, what minimum number of participants gives 85% power?",
+    "ground_truth": {
+      "total_sample_size": 31
+    }
+  },
+  {
+    "id": "t1-paired-004",
+    "question": "In a preliminary paired crossover study comparing two formulations, we want to detect a mean difference of 0.25 SD of the paired differences. Assume independent Gaussian paired differences and no period or carryover effects. How many participants are needed for 95% power with a two-sided paired t test at alpha = 0.01?",
+    "ground_truth": {
+      "total_sample_size": 289
+    }
+  },
+  {
+    "id": "t1-anova-001",
+    "question": "We're comparing 3 treatment groups for pain relief and expect a medium effect size (Cohen's f = 0.25). How many subjects per group for 80% power at alpha = 0.05? Assume equal allocation and independent Gaussian outcomes with a common residual variance. Use a fixed-effects one-way omnibus ANOVA F test.",
+    "ground_truth": {
+      "sample_size_per_group": 53,
+      "total_sample_size": 159
+    }
+  },
+  {
+    "id": "t1-anova-002",
+    "question": "We're testing 4 different dosage levels of a medication and expect to see an effect size of f = 0.30 between groups. How many patients per dosage group for 80% power at alpha = 0.05? Assume equal allocation and independent Gaussian outcomes with a common residual variance. Use a fixed-effects one-way omnibus ANOVA F test.",
+    "ground_truth": {
+      "sample_size_per_group": 32,
+      "total_sample_size": 128
+    }
+  },
+  {
+    "id": "t1-anova-003",
+    "question": "We're comparing 5 different exercise interventions for VO2max improvement. We expect a small-medium effect (f = 0.20). How many subjects per group for 90% power at alpha = 0.05? Assume equal allocation and independent Gaussian outcomes with a common residual variance. Use a fixed-effects one-way omnibus ANOVA F test.",
+    "ground_truth": {
+      "sample_size_per_group": 78,
+      "total_sample_size": 390
+    }
+  },
+  {
+    "id": "t1-anova-004",
+    "question": "We're comparing three different diets for LDL cholesterol reduction. Based on the literature, we expect reductions of about 10, 20, and 25 mg/dL for the three diets, with a common SD of 20 mg/dL. How many participants per diet group for 80% power at alpha = 0.05? Assume equal allocation and independent Gaussian outcomes. Use the fixed-effects one-way omnibus ANOVA F test.",
+    "ground_truth": {
+      "sample_size_per_group": 35,
+      "total_sample_size": 105
+    }
+  },
+  {
+    "id": "t1-anova-005",
+    "question": "We want to compare the mean outcome across six treatment-center populations. Enroll an equal number of independent participants at each center. Assume Gaussian outcomes with the same within-center variance, and a between-center Cohen's f of 0.40. How many participants per center are needed for 95% power using a fixed-effects one-way omnibus ANOVA F test at alpha = 0.01?",
+    "ground_truth": {
+      "sample_size_per_group": 29,
+      "total_sample_size": 174
+    }
+  },
+  {
+    "id": "t1-prop-001",
+    "question": "We're testing a new treatment where we expect the response rate to improve from 40% (control) to 60% (treatment). How many patients per group for 80% power at alpha = 0.05 (two-sided)? Use equal allocation and the normal score planning approximation with pooled variance under the null and unpooled variance under the alternative. Omit the continuity correction.",
+    "ground_truth": {
+      "sample_size_per_group": 97,
+      "total_sample_size": 194
+    }
+  },
+  {
+    "id": "t1-prop-002",
+    "question": "Our current drug has a 30% adverse event rate. We're hoping a new formulation will reduce this to 20%. How many patients per arm do we need to detect this difference with 80% power at alpha = 0.05? Use equal allocation and a two-sided normal score planning approximation with pooled variance under the null and unpooled variance under the alternative. Omit the continuity correction.",
+    "ground_truth": {
+      "sample_size_per_group": 294,
+      "total_sample_size": 588
+    }
+  },
+  {
+    "id": "t1-prop-003",
+    "question": "We're planning a vaccine efficacy trial. The placebo group is expected to have a 10% infection rate, and we hope the vaccine reduces this to 5%. Since we're testing efficacy (one-sided), we'll use alpha = 0.025. How many per group for 90% power? Use equal allocation and the normal score planning approximation with pooled variance under the null and unpooled variance under the alternative. Omit the continuity correction.",
+    "ground_truth": {
+      "sample_size_per_group": 582,
+      "total_sample_size": 1164
+    }
+  },
+  {
+    "id": "t1-prop-004",
+    "question": "We're comparing a new surgical technique to the standard approach. The standard technique has about 85% success rate, and we expect the new technique to achieve 95%. How many patients per group for 80% power at alpha = 0.05? Use equal allocation and a two-sided normal score planning approximation with pooled variance under the null and unpooled variance under the alternative. Omit the continuity correction.",
+    "ground_truth": {
+      "sample_size_per_group": 141,
+      "total_sample_size": 282
+    }
+  },
+  {
+    "id": "t1-prop-005",
+    "question": "Plan an equally allocated binary-outcome noninferiority trial. Assume the true response rate is 70% in each arm. Noninferiority requires ruling out a treatment-minus-control risk difference of −0.10 or less. How many participants per arm are required for 90% power at one-sided alpha = 0.025 using the Farrington–Manning score planning approximation?",
+    "ground_truth": {
+      "sample_size_per_group": 441,
+      "total_sample_size": 882
+    }
+  },
+  {
+    "id": "t1-chi-001",
+    "question": "I'm testing independence in a 2×2 table and want 80% power to detect a medium effect (w = 0.3) at alpha = 0.05. What total sample size do I need? Use the Pearson chi-squared power approximation with noncentrality Nw².",
+    "ground_truth": {
+      "total_sample_size": 88
+    }
+  },
+  {
+    "id": "t1-chi-002",
+    "question": "I'm analyzing a 3×2 contingency table (3 treatment groups, 2 outcome categories) and want to detect an effect size of w = 0.25 with 80% power at alpha = 0.05. What total N is needed? Use the Pearson chi-squared power approximation with noncentrality Nw².",
+    "ground_truth": {
+      "total_sample_size": 155
+    }
+  },
+  {
+    "id": "t1-chi-003",
+    "question": "I'm testing association in a 3×4 contingency table. I want to detect an effect size of w = 0.3 with 80% power at alpha = 0.05. What total sample size do I need? Use the Pearson chi-squared power approximation with noncentrality Nw².",
+    "ground_truth": {
+      "total_sample_size": 152
+    }
+  },
+  {
+    "id": "t1-chi-004",
+    "question": "We're analyzing genotype-phenotype association in a 4×4 table and need to detect a small effect (w = 0.2) with 90% power at a stringent alpha = 0.01. What total sample size? Use the Pearson chi-squared power approximation with noncentrality Nw².",
+    "ground_truth": {
+      "total_sample_size": 654
+    }
+  },
+  {
+    "id": "t1-chi-005",
+    "question": "I'm running a goodness-of-fit test with 5 categories, comparing observed vs expected distributions. I want to detect an effect size w = 0.35 with 85% power at alpha = 0.05. What sample size? Use the Pearson chi-squared power approximation with noncentrality Nw². Treat the five null probabilities as prespecified.",
+    "ground_truth": {
+      "total_sample_size": 110
+    }
+  },
+  {
+    "id": "t1-corr-001",
+    "question": "I want to investigate whether BMI is correlated with blood pressure in our patient population. Based on the literature, I expect a moderate correlation of about r = 0.3. How many patients do I need for 80% power at alpha = 0.05? Assume independent draws from a bivariate normal distribution. Use exact power for the two-sided Pearson correlation test of zero correlation.",
+    "ground_truth": {
+      "total_sample_size": 84
+    }
+  },
+  {
+    "id": "t1-corr-002",
+    "question": "We're studying whether age is correlated with cognitive decline scores. We expect a modest correlation of r = 0.25. How many participants for 90% power at alpha = 0.05? Assume independent draws from a bivariate normal distribution. Use exact power for the two-sided Pearson correlation test of zero correlation.",
+    "ground_truth": {
+      "total_sample_size": 164
+    }
+  },
+  {
+    "id": "t1-corr-003",
+    "question": "I'm investigating whether a novel biomarker correlates with patient outcomes. The expected correlation is small (r = 0.15), but clinically meaningful. How many patients do I need for 80% power at alpha = 0.05? Assume independent draws from a bivariate normal distribution. Use exact power for the two-sided Pearson correlation test of zero correlation.",
+    "ground_truth": {
+      "total_sample_size": 346
+    }
+  },
+  {
+    "id": "t1-corr-004",
+    "question": "We expect a strong correlation (r = 0.5) between exercise frequency and VO2max. We want high confidence - 95% power with alpha = 0.01. What sample size do we need? Assume independent draws from a bivariate normal distribution. Use exact power for the two-sided Pearson correlation test of zero correlation.",
+    "ground_truth": {
+      "total_sample_size": 62
+    }
+  },
+  {
+    "id": "t1-corr-005",
+    "question": "I hypothesize that medication adherence is positively correlated with health outcomes (r = 0.2). Since I'm predicting a positive direction, I'll use a one-sided test at alpha = 0.025. How many patients for 85% power? Assume independent draws from a bivariate normal distribution. Use exact power for the one-sided Pearson correlation test of zero correlation.",
+    "ground_truth": {
+      "total_sample_size": 221
+    }
+  }
+]
